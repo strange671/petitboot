@@ -811,7 +811,7 @@ static void config_get_active_consoles(struct config *config)
 	config->consoles[0] = talloc_asprintf(config->consoles,
 					"/dev/hvc0 [IPMI / Serial]");
 	config->consoles[1] = talloc_asprintf(config->consoles,
-					"/dev/tty1 [VGA]");
+					"/dev/tty0 [VGA]");
 
 	fsp_prop = talloc_asprintf(config, "%sfsps", devtree_dir);
 	if (stat(fsp_prop, &sbuf) == 0) {
